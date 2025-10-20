@@ -1,4 +1,4 @@
-#  Aplicativo Flutter: Navegação Entre Telas
+#  Mobile app - CineMarques.
 
 *Autor:
 *  Inácio Barbosa De Lima 2587078,
