@@ -20,14 +20,15 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.example.myappluciano"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
+        applicationId = "com.example.cinemarques"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
+
+        val flutterVersionCode = project.findProperty("flutterVersionCode")?.toString()?.toInt() ?: 1
+        val flutterVersionName = project.findProperty("flutterVersionName")?.toString() ?: "1.0"
+
+        versionCode = flutterVersionCode
+        versionName = flutterVersionName
     }
 
     buildTypes {
